@@ -1,0 +1,76 @@
+{
+  "exported_at": "2026-01-09T12:00:00Z",
+  "collection": "audit_readbacks",
+  "record_count": 16,
+  "records": [
+    {
+      "system": "account_service", "resource_id": "profile_mira", "record_type": "USER_PROFILE",
+      "subject_reference": "user_mira", "result": "NOT_FOUND"
+    },
+    {
+      "system": "identity_service", "resource_id": "tombstone_mira", "record_type": "ACCOUNT_TOMBSTONE",
+      "user_id": "user_mira", "account_status": "DELETED",
+      "name": null, "email": null, "phone": null, "email_hash": null
+    },
+    {
+      "system": "analytics_platform", "resource_id": "analytics_mira", "record_type": "ANALYTICS_PROFILE",
+      "result": "ANONYMIZED", "customer_reference": null, "user_id": null,
+      "email": null, "phone": null, "email_hash": null, "audience_cohort": "aggregate_only"
+    },
+    {
+      "system": "security_service", "resource_id": "journal_mira", "record_type": "SECURITY_AUDIT_LOG",
+      "subject_reference": "user_mira", "result": "FOUND", "retention_until": "2030-01-01T00:00:00Z"
+    },
+    {
+      "system": "legal_retention_service", "resource_id": "hold_mira", "record_type": "LEGAL_HOLD_RECORD",
+      "subject_reference": "user_mira", "hold_active": true, "retained_until": "2030-01-01T00:00:00Z",
+      "retention_reason": "Fictional billing dispute", "result": "FOUND"
+    },
+    {
+      "system": "support_platform", "resource_id": "conversation_mira", "record_type": "SUPPORT_MESSAGE",
+      "subject_reference": "user_mira", "shared_context": true,
+      "message_text": "[REDACTED]", "result": "REDACTED"
+    },
+    {
+      "system": "integration_service", "resource_id": "connector_mira", "record_type": "DATA_FLOW",
+      "subject_reference": "user_mira", "enabled": false, "scheduler_registered": false
+    },
+    {
+      "system": "backup_service", "resource_id": "archive_mira", "record_type": "BACKUP_ARCHIVE",
+      "subject_reference": "user_mira", "restore_allowed": false
+    },
+    {
+      "system": "account_service", "resource_id": "profile_talin", "record_type": "USER_PROFILE",
+      "subject_reference": "user_talin", "result": "NOT_FOUND"
+    },
+    {
+      "system": "search_service", "resource_id": "search_talin", "record_type": "SEARCH_INDEX_ENTRY",
+      "email": "talin.previous@example.test", "result": "FOUND",
+      "source_system": "account_service", "source_resource_id": "profile_talin"
+    },
+    {
+      "system": "integration_service", "resource_id": "connector_talin", "record_type": "DATA_FLOW",
+      "subject_selector": "talin.previous@example.test", "enabled": true, "scheduler_registered": true
+    },
+    {
+      "system": "security_service", "resource_id": "journal_talin", "record_type": "SECURITY_AUDIT_LOG",
+      "subject_reference": "user_talin", "result": "FOUND", "retention_until": "2030-01-01T00:00:00Z"
+    },
+    {
+      "system": "backup_service", "resource_id": "archive_talin", "record_type": "BACKUP_ARCHIVE",
+      "subject_reference": "user_talin", "restore_allowed": false
+    },
+    {
+      "system": "account_service", "resource_id": "profile_niva", "record_type": "USER_PROFILE",
+      "subject_reference": "user_niva", "result": "NOT_FOUND"
+    },
+    {
+      "system": "backup_service", "resource_id": "archive_niva", "record_type": "BACKUP_ARCHIVE",
+      "subject_reference": "user_niva", "archive_key": "fictional_archive_niva"
+    },
+    {
+      "system": "security_service", "resource_id": "journal_niva", "record_type": "SECURITY_AUDIT_LOG",
+      "subject_reference": "user_niva", "result": "FOUND", "retention_until": "2030-01-01T00:00:00Z"
+    }
+  ]
+}

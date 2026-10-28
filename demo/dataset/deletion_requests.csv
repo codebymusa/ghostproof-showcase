@@ -1,0 +1,4 @@
+case_id,email,requested_at,reported_status,reported_at,audit_at,request_text
+demo_river,mira.river@example.test,2026-01-05T09:00:00Z,COMPLETE,2026-01-06T09:00:00Z,2026-01-10T12:00:00Z,Please delete my account and personal data. Preserve records required by the supplied retention policy.
+demo_sky,talin.previous@example.test,2026-01-05T09:00:00Z,COMPLETE,2026-01-06T09:00:00Z,2026-01-10T12:00:00Z,Please delete my account and copies linked to my previous email address.
+demo_ash,niva.ash@example.test,2026-01-05T09:00:00Z,COMPLETE,2026-01-06T09:00:00Z,2026-01-10T12:00:00Z,Please delete my account and check that copies cannot return from search or backups.

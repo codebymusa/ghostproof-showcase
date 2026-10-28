@@ -1,0 +1,17 @@
+{
+  "exported_at": "2026-01-04T12:00:00Z",
+  "collection": "operational_record_history",
+  "record_count": 2,
+  "records": [
+    {
+      "system": "account_service", "resource_id": "profile_mira",
+      "record_type": "USER_PROFILE", "recorded_at": "2026-01-04T09:00:00Z",
+      "user_id": "user_mira", "email": "mira.river@example.test", "result": "FOUND"
+    },
+    {
+      "system": "analytics_platform", "resource_id": "analytics_mira",
+      "record_type": "ANALYTICS_PROFILE", "recorded_at": "2026-01-04T09:00:00Z",
+      "customer_reference": "user_mira", "email": "mira.river@example.test", "result": "IDENTIFIABLE"
+    }
+  ]
+}

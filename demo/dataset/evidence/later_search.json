@@ -1,0 +1,11 @@
+{
+  "exported_at": "2026-01-12T12:00:00Z",
+  "collection": "search_readbacks",
+  "record_count": 1,
+  "records": [
+    {
+      "system": "search_service", "resource_id": "search_niva", "record_type": "SEARCH_INDEX_ENTRY",
+      "subject_reference": "user_niva", "physical_copy": "primary", "result": "NOT_FOUND"
+    }
+  ]
+}

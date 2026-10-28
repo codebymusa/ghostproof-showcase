@@ -1,0 +1,3 @@
+Fictional operator handover. These are scoped readbacks, not workflow completion messages.
+At 2026-01-09T13:00:00Z, the search_service primary readback for search_niva and subject user_niva found no record.
+At 2026-01-09T13:01:00Z, the backup_service readback for archive_niva and subject user_niva confirmed restore access was blocked.

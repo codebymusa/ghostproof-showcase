@@ -1,0 +1,5 @@
+activity_id,event_time,event_type,source_system,target_system,resource_id,reported_result,details
+demo_delete_mira,2026-01-06T08:00:00Z,DELETE_RECORD,privacy_worker,account_service,profile_mira,SUCCESS,Worker reported profile deletion; a separate readback is required.
+demo_delete_talin,2026-01-06T08:00:00Z,DELETE_RECORD,privacy_worker,account_service,profile_talin,SUCCESS,Worker reported profile deletion; a separate readback is required.
+demo_delete_search,2026-01-06T08:05:00Z,DELETE_RECORD,privacy_worker,search_service,search_talin,SUCCESS,Worker reported search cleanup; this is not a state observation.
+demo_delete_niva,2026-01-06T08:00:00Z,DELETE_RECORD,privacy_worker,account_service,profile_niva,SUCCESS,Worker reported profile deletion; a separate readback is required.

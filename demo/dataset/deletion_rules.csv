@@ -1,0 +1,9 @@
+rule_id,data_category,condition,required_action
+showcase_profile,USER_PROFILE,The fictional workspace has no reason to keep an ordinary profile,DELETE
+showcase_search,SEARCH_INDEX_ENTRY,A search copy has no independent retention purpose,DELETE
+showcase_analytics,ANALYTICS_PROFILE,Keep only aggregate participation with no personal linkage,ANONYMIZE
+showcase_journal,SECURITY_AUDIT_LOG,Keep the privacy-safe journal through its stated retention_until timestamp,RETAIN
+showcase_hold,LEGAL_HOLD_RECORD,Keep the fixture record only while its hold_active flag and any end date permit,RETAIN
+showcase_conversation,SUPPORT_MESSAGE,Preserve the shared conversation after removing the subject identifiers,REDACT
+showcase_archive,BACKUP_ARCHIVE,Keep the archive but require a readback proving restore access is blocked,RETAIN
+showcase_tombstone,ACCOUNT_TOMBSTONE,Keep the internal subject link while all direct-identifier slots are cleared,REDACT

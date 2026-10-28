@@ -1,0 +1,5 @@
+file_id,file_path,origin,captured_at
+demo_history,evidence/history.json,fictional_platform_readback,2026-01-04T12:00:00Z
+demo_readbacks,evidence/readbacks.json,fictional_platform_readback,2026-01-09T12:00:00Z
+demo_conflicts,evidence/conflicting_search.json,fictional_search_readback,2026-01-09T12:00:00Z
+demo_late,evidence/later_search.json,fictional_search_readback,2026-01-12T12:00:00Z

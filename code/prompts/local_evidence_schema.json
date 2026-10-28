@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["facts", "uncertainties"],
+  "properties": {
+    "facts": {
+      "type": "array", "maxItems": 16,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["line_no"],
+        "properties": {
+          "line_no": {"type": "integer", "minimum": 1}
+        }
+      }
+    },
+    "uncertainties": {"type": "array", "items": {"enum": ["missing_identifiers", "ambiguous_observation"]}, "maxItems": 16}
+  }
+}

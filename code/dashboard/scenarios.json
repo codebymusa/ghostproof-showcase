@@ -1,0 +1,14 @@
+{
+  "demo_river": {
+    "title": "Mira / retained records",
+    "description": "Start here. Follow a deleted profile, a privacy-safe tombstone and records the fictional policy requires keeping. Inspect the final-state verification checks."
+  },
+  "demo_sky": {
+    "title": "Talin / the old-email trail",
+    "description": "Follow an old email into search and inspect the connector that can copy data again. Compare the worker's success claim with actual readbacks and the proposed order of work."
+  },
+  "demo_ash": {
+    "title": "Niva / conflicting readbacks",
+    "description": "Compare conflicting search observations and missing restore controls. Watch the cutoff: a later clean capture cannot answer an earlier audit. AI mode adds a separate dated handover note."
+  }
+}

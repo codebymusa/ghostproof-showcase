@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>GhostProof | Audit workspace</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to audit workspace</a>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="GhostProof home"><span class="brand-mark" aria-hidden="true">G</span>GhostProof<span class="brand-sub">AUDIT WORKSPACE</span></a>
+    <span class="local-label"><span class="dot" aria-hidden="true"></span>Local only <span class="divider">/</span> Fictional data</span>
+  </header>
+  <div class="workspace">
+    <aside class="sidebar" aria-label="Audit controls">
+      <p class="eyebrow">YOUR WORKSPACE</p>
+      <div class="nav-active">Deletion audits <span id="scenario-count">—</span></div>
+      <div class="sidebar-rule"></div>
+      <form id="audit-form">
+        <h2>Start an audit</h2>
+        <label for="scenario">Fictional scenario</label>
+        <select id="scenario" name="scenario" aria-describedby="scenario-help" disabled><option>Loading scenarios…</option></select>
+        <p id="scenario-help" class="scenario-help">Each request and every source is fictional.</p>
+        <label for="mode">Evidence mode</label>
+        <select id="mode" name="mode" aria-describedby="mode-help">
+          <option value="offline">Offline baseline</option>
+          <option value="ai">Local AI-assisted</option>
+        </select>
+        <p class="help" id="mode-help">Deterministic audit. No network or model calls.</p>
+        <p id="ai-availability" class="small">Offline never needs Ollama or credentials.</p>
+        <button id="run-audit" type="submit" disabled>Run audit <span aria-hidden="true">→</span></button>
+        <p id="progress" class="progress" role="status" aria-live="polite">Preparing fictional scenarios…</p>
+      </form>
+      <div class="sidebar-foot"><span class="tiny-label">SAFE BY DESIGN</span><p>Read-only evidence review.<br>Remediation is a proposed plan.<br>Nothing is deleted.</p></div>
+    </aside>
+    <main id="main" tabindex="-1">
+      <div class="page-heading"><div><p class="eyebrow">PRIVACY OPERATIONS / DEMO LAB</p><h1>Deletion audit</h1><p class="subtitle">A success message is a claim. Follow the evidence.</p></div><span class="pill neutral">Read-only</span></div>
+      <details class="about"><summary>New to GhostProof? How it works & what to look for</summary>
+        <p>A successful deletion job can leave old-email copies or a path that recreates data. Start with Mira, then Talin, then Niva. Nothing here connects to real customer systems.</p>
+        <p><strong>Pipeline:</strong> fictional request → current/historical identity → source-supported facts → state at the cutoff → explicit policy → findings, proposed remediation and verification.</p>
+        <p><strong>AI's specific role:</strong> optional local source-line selection. Deterministic code extracts and validates facts; the model never decides the verdict. Offline baseline needs no model. AI mode adds a separate handover note, so it is a different evidence corpus.</p>
+        <p><strong>Read the evidence:</strong> a system is an application; a resource is a record or process. Observed time and capture/availability differ. Claims do not establish absence. COMPLETE is limited to this fictional corpus; INSUFFICIENT_EVIDENCE means no supported verdict, not a hidden pass.</p>
+      </details>
+      <div id="error" class="notice error" role="alert" tabindex="-1" hidden></div>
+      <section id="welcome" class="welcome" aria-labelledby="welcome-title">
+        <div class="welcome-symbol" aria-hidden="true">G<span>✓</span></div>
+        <p class="eyebrow">EVIDENCE BEFORE CONFIDENCE</p>
+        <h2 id="welcome-title">Make the invisible visible.</h2>
+        <p>Select a fictional request and run the real audit engine. Trace identifiers, surviving copies and recreation risks to their source.</p>
+        <div class="welcome-points"><span>01 / Resolve identity</span><span>02 / Reconstruct state</span><span>03 / Verify policy</span></div>
+      </section>
+      <div id="result" hidden>
+        <section id="verdict" class="verdict" tabindex="-1" aria-labelledby="verdict-title"></section>
+        <div id="metrics" class="metrics"></div>
+        <nav class="section-nav" aria-label="Audit report sections"><a href="#verdict">Audit result</a><a href="#request">Request & identity</a><a href="#evidence">Evidence timeline</a><a href="#plan">Findings & plan</a><a href="#extraction">Extraction</a></nav>
+        <section id="request" class="panel" aria-labelledby="request-title"><div class="panel-heading"><span class="section-number">01</span><h2 id="request-title">Request & identity</h2></div><div id="request-content"></div></section>
+        <section id="evidence" class="panel" aria-labelledby="evidence-title"><div class="panel-heading"><span class="section-number">02</span><h2 id="evidence-title">Evidence timeline</h2></div><p class="section-intro">Observation time and availability are separate. Post-cutoff evidence is visible for explanation, never accepted as proof.</p><div class="legend"><span>Direct / structured observation</span><span>Operational claim ≠ state proof</span><span>Model selection → deterministic extraction</span></div><div id="timeline"></div><h3>Reconstructed resource states</h3><div id="resource-states"></div></section>
+        <section id="plan" class="panel" aria-labelledby="plan-title"><div class="panel-heading"><span class="section-number">03</span><h2 id="plan-title">Findings & proposed plan</h2></div><p class="section-intro">No action below has been executed. Future remediation and verification have no execution evidence.</p><div id="steps"></div></section>
+        <section id="review" class="panel" aria-labelledby="review-title"><div class="panel-heading"><span class="section-number">04</span><h2 id="review-title">Missing evidence & review</h2></div><div id="review-content"></div></section>
+        <section id="extraction" class="panel" aria-labelledby="extraction-title"><div class="panel-heading"><span class="section-number">05</span><h2 id="extraction-title">Extraction transparency</h2></div><div id="extraction-content"></div></section>
+      </div>
+      <footer>GhostProof · Fictional portfolio environment. COMPLETE is bounded to the supplied corpus, not certification of external systems or legal compliance.</footer>
+    </main>
+  </div>
+</body>
+</html>

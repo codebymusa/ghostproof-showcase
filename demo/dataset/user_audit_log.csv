@@ -1,0 +1,2 @@
+audit_id,user_id,event_time,field_name,old_value,new_value
+demo_email_change,user_talin,2026-01-03T00:00:00Z,email,talin.previous@example.test,talin.current@example.test
